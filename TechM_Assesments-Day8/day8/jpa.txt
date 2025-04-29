@@ -1,0 +1,16 @@
+in jdbc:
+statement.excuteQuery("selcet * from user where username=?")
+
+in JPA:
+TypedQuery<UserQuery("select u from USer u where username=:username",User.class);
+List<User>users=q.setParameter("username","vishnu").getResultList()
+performance decent
+database Independent
+
+
+Drawbacks:
+JPQL->Entities..
+I wnated to fetch the data by joining tables:
+3 tables->2 tables are entity..1table which is not represented by Entity.
+JPQL->does not support join on non-entity tables.
+
