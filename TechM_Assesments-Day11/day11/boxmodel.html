@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Basics</title>
+    <style>
+        /* CSS Selectors and Properties */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header, nav, section, article, footer {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: white;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: navy;
+        }
+        /* Box Model */
+        .box {
+            width: 300px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 10px;
+            background-color: lightblue;
+            text-align: center;
+        }
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .flex-item {
+            background-color: steelblue;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+            text-align: center;
+            flex: 1;
+        }
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: coral;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Responsive Design (Media Queries) */
+        @media (max-width: 600px) {
+            .box { background-color: orange; }
+            .flex-container { flex-direction: column; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Basics</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section>
+        <h2>Welcome to HTML & CSS Learning</h2>
+        <p>This section contains an overview of HTML and CSS elements.</p>
+    </section>
+    
+    <article>
+        <h2>Box Model Example</h2>
+        <div class="box">This is a box model example.</div>
+    </article>
+    
+    <article>
+        <h2>Flexbox Example</h2>
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+    </article>
+    
+    <article>
+        <h2>Grid Layout Example</h2>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </article>
+    
+    <article>
+        <h2>HTML Forms</h2>
+        <p>Fill out the form below:</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </article>
+    
+    <footer>
+        <p>&copy; 2025 HTML & CSS Basics. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
